@@ -1,25 +1,8 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import NavMenu from '../parts/NavMenu';
-import {
-  Actions, Catalog, Courses, Hero, Testimonials,
-} from '../components/Landing';
-import Footer from '../components/Footer';
+import LandingWrapper from '../components/Landing';
 
 function LandingPage() {
-  return (
-    <div>
-      <NavMenu />
-      <Container>
-        <Hero />
-        <Catalog />
-        <Courses />
-        <Actions />
-        <Testimonials />
-      </Container>
-      <Footer />
-    </div>
-  );
+  return <LandingWrapper />;
 }
 
 export default LandingPage;

@@ -1,9 +1,8 @@
 import React from 'react';
+import CoursesWrapper from '../components/Courses';
 
 function CoursesPage() {
-  return (
-    <div />
-  );
+  return <CoursesWrapper />;
 }
 
 export default CoursesPage;
