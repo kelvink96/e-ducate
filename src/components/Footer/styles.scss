@@ -1,0 +1,9 @@
+a[href]:not([role="button"], .dropdown-item), .btn-link, .dropdown-toggle {
+  color: white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
