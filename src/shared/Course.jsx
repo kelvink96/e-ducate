@@ -10,7 +10,7 @@ function Course({
   id, image, title, body, level, ratings, period,
 }) {
   return (
-    <Card className="h-100 me-3">
+    <Card className="h-100">
       <Card.Img variant="top" height={200} src={image} style={{ objectFit: 'cover' }} />
       <Card.Body>
         <div className="d-flex align-items-center justify-content-between mb-2">

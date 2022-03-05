@@ -2,7 +2,7 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { courses } from '../../mocks/courses';
-import Course from './Course';
+import Course from '../../shared/Course';
 
 function Courses() {
   const properties = {

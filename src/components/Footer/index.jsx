@@ -15,7 +15,7 @@ import './styles.scss';
 
 function Footer() {
   return (
-    <div className="bg-dark p-5 text-white">
+    <div className="bg-dark p-5 text-white footer">
       <Container>
         <Row>
           <Col>
