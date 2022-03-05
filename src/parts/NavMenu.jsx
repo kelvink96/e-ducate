@@ -19,18 +19,15 @@ function NavMenu() {
     <div>
       <Navbar expand="lg" className="shadow-sm" fixed>
         <Container>
-          <LinkContainer to="/">
-            <Navbar.Brand>
-              <img
-                src={Logo}
-                alt="logo"
-                className="rounded-1"
-                height={24}
-                width={24}
-              />
-              <span className="ms-2">E-ducate</span>
-            </Navbar.Brand>
-          </LinkContainer>
+          <Navbar.Brand href="/">
+            <img
+              src={Logo}
+              alt="logo"
+              height={32}
+              width={32}
+            />
+            <span className="ms-3 text-primary fw-bold">E-ducate</span>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="nav-menu" />
           <Navbar.Collapse id="nav-menu">
             <Nav className="mx-auto">
