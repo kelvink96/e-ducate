@@ -10,6 +10,8 @@ export const courses = [
     enrolledCount: 0,
     level: 'intermediate',
     period: '5 months',
+    progress: 60,
+    type: 'pro',
   },
   {
     id: 1,
@@ -21,6 +23,8 @@ export const courses = [
     enrolledCount: 0,
     level: 'intermediate',
     period: '4 months',
+    progress: 1,
+    type: 'pro',
   },
   {
     id: 2,
@@ -32,6 +36,8 @@ export const courses = [
     enrolledCount: 0,
     level: 'beginner',
     period: '4 months',
+    progress: 1,
+    type: 'pro',
   },
   {
     id: 3,
@@ -43,6 +49,8 @@ export const courses = [
     enrolledCount: 0,
     level: 'intermediate',
     period: '4 months',
+    progress: 31,
+    type: 'free',
   },
   {
     id: 4,
@@ -54,6 +62,8 @@ export const courses = [
     enrolledCount: 0,
     level: 'intermediate',
     period: '4 months',
+    progress: 1,
+    type: 'free',
   },
   {
     id: 5,
@@ -65,6 +75,8 @@ export const courses = [
     enrolledCount: 0,
     level: 'beginner',
     period: '3 months',
+    progress: 1,
+    type: 'free',
   },
   {
     id: 6,
@@ -76,6 +88,8 @@ export const courses = [
     enrolledCount: 0,
     level: 'advanced',
     period: '4 months',
+    progress: 100,
+    type: 'pro',
   },
   {
     id: 7,
@@ -87,6 +101,8 @@ export const courses = [
     enrolledCount: 0,
     level: 'beginner',
     period: '2 months',
+    progress: 54,
+    type: 'free',
   },
   {
     id: 8,
@@ -98,5 +114,7 @@ export const courses = [
     enrolledCount: 0,
     level: 'beginner',
     period: '3 months',
+    progress: 12,
+    type: 'free',
   },
 ];

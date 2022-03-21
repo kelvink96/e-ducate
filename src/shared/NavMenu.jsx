@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Container,
+  Dropdown,
   Form,
   FormControl,
   Nav,
@@ -9,7 +10,9 @@ import {
 } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCog, faDoorOpen, faEllipsisH, faHome, faQuestionCircle, faUser,
+} from '@fortawesome/free-solid-svg-icons';
 import './styles.scss';
 import Logo from '../assets/img/logo.png';
 import UserImage from '../assets/img/avatar.jpg';
@@ -71,8 +74,36 @@ function NavMenu() {
                   />
                 )}
               >
-                <LinkContainer to="/pricing">
-                  <NavDropdown.Item>pricing</NavDropdown.Item>
+                <LinkContainer to="/profile">
+                  <NavDropdown.Item>
+                    <FontAwesomeIcon className="me-2" icon={faUser} />
+                    profile
+                  </NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/">
+                  <NavDropdown.Item>
+                    <FontAwesomeIcon className="me-2" icon={faCog} />
+                    account + billing
+                  </NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/">
+                  <NavDropdown.Item>
+                    <FontAwesomeIcon className="me-2" icon={faHome} />
+                    my home
+                  </NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/">
+                  <NavDropdown.Item>
+                    <FontAwesomeIcon className="me-2" icon={faQuestionCircle} />
+                    helpcenter
+                  </NavDropdown.Item>
+                </LinkContainer>
+                <Dropdown.Divider />
+                <LinkContainer to="/">
+                  <NavDropdown.Item>
+                    <FontAwesomeIcon className="me-2" icon={faDoorOpen} />
+                    logout
+                  </NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
             </Nav>
