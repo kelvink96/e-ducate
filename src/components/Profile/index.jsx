@@ -14,13 +14,13 @@ function ProfileWrapper() {
   return (
     <div>
       <NavMenu />
-      <Container>
-        <Row>
+      <Container className="main">
+        <Row className="py-5">
           <Col sm={12} md={2}>
             <Profile />
           </Col>
           <Col sm={12} md={7}>
-            <h4>latest activity</h4>
+            <h4 className="mb-4 text-capitalize">latest activity</h4>
             {courses.slice(0, 5).map((c) => (
               <CourseCard key={`cou-${c.id}`} title={c.title} type={c.type} body={c.body} progress={c.progress} id={c.id} />
             ))}
@@ -28,14 +28,29 @@ function ProfileWrapper() {
             <Badges />
           </Col>
           <Col sm={12} md={3}>
-            <Card style={{ width: '18rem' }}>
-              <Card.Header>achievements</Card.Header>
+            <Card>
+              <Card.Header className="bg-transparent"><h4>Achievements</h4></Card.Header>
               <ListGroup className="list-group-flush">
-                <ListGroupItem>badges</ListGroupItem>
-                <ListGroupItem>trophies</ListGroupItem>
-                <ListGroupItem>reputation</ListGroupItem>
-                <ListGroupItem>followers</ListGroupItem>
-                <ListGroupItem>following</ListGroupItem>
+                <ListGroupItem action className="d-flex justify-content-between">
+                  <span>Badges</span>
+                  <b>35</b>
+                </ListGroupItem>
+                <ListGroupItem action className="d-flex justify-content-between">
+                  <span>Trophies</span>
+                  <b>7</b>
+                </ListGroupItem>
+                <ListGroupItem action className="d-flex justify-content-between">
+                  <span>Reputation</span>
+                  <b>1</b>
+                </ListGroupItem>
+                <ListGroupItem action className="d-flex justify-content-between">
+                  <span>Followers</span>
+                  <b>0</b>
+                </ListGroupItem>
+                <ListGroupItem action className="d-flex justify-content-between">
+                  <span>Following</span>
+                  <b>0</b>
+                </ListGroupItem>
               </ListGroup>
             </Card>
           </Col>

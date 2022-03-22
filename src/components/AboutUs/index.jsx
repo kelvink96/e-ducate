@@ -12,7 +12,7 @@ function AboutUsWrapper() {
   return (
     <div>
       <NavMenu />
-      <Container>
+      <Container className="main">
         <Title />
         <Gallery />
         <Stats />

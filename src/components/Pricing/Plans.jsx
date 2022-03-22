@@ -9,12 +9,12 @@ function Plans() {
     <div>
       {pricePlans.map((pf) => (
         <Table key={`tb-${pf.id}`} borderless>
-          <thead className="bg-secondary">
+          <thead className="bg-secondary fw-bold">
             <tr>
               <td style={{ width: '55%' }}>{pf.title}</td>
-              <td style={{ width: '15%' }}>professional</td>
-              <td style={{ width: '15%' }}>team</td>
-              <td style={{ width: '15%' }}>enterprise</td>
+              <td style={{ width: '15%' }}>Professional</td>
+              <td style={{ width: '15%' }}>Team</td>
+              <td style={{ width: '15%' }}>Enterprise</td>
             </tr>
           </thead>
           <tbody>

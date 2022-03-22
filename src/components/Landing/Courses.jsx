@@ -7,16 +7,16 @@ import Course from '../../shared/Course';
 function Courses() {
   const properties = {
     duration: 3000,
-    slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: false,
-    indicators: false,
+    indicators: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToScroll: 3,
         },
       },
       {
@@ -30,23 +30,25 @@ function Courses() {
   };
 
   return (
-    <div>
-      <div>
-        <Slide {...properties}>
-          {courses.map((course) => (
-            <Course
-              key={course.id}
-              id={course.id}
-              image={course.image}
-              title={course.title}
-              body={course.body}
-              level={course.level}
-              ratings={course.ratings}
-              period={course.period}
-            />
-          ))}
-        </Slide>
+    <div className="py-5">
+      <div className="text-center mb-4">
+        <h1 className="display-6 fw-bold">Popular courses</h1>
+        <p>Choose from hundreds of courses from specialist organizations</p>
       </div>
+      <Slide {...properties}>
+        {courses.map((course) => (
+          <Course
+            key={course.id}
+            id={course.id}
+            image={course.image}
+            title={course.title}
+            body={course.body}
+            level={course.level}
+            ratings={course.ratings}
+            period={course.period}
+          />
+        ))}
+      </Slide>
     </div>
   );
 }

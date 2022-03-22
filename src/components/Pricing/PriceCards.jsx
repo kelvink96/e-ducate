@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Badge, Button,
+  Button,
   Card, Col, ListGroup, ListGroupItem,
 } from 'react-bootstrap';
 
@@ -9,18 +9,15 @@ function PriceCards({
 }) {
   return (
     <Col>
-      <Card className={`h-100 text-center ${preferred && 'bg-secondary'}`}>
+      <Card className={`h-100 text-center ${preferred && 'bg-primary text-white'}`}>
         <Card.Body>
-          <Badge className={`fs-4 mb-3 rounded-3 fw-normal ${preferred ? 'text-black' : 'text-white'}`} bg={`${preferred ? 'secondary' : 'primary'}`}>{type}</Badge>
-          <hr />
+          <h4 className="display-6 fw-normal text-capitalize mb-5">{type}</h4>
           <Card.Title><h3>{price}</h3></Card.Title>
           <Card.Text>{description}</Card.Text>
-          <hr />
-          <Card.Title><h5>features</h5></Card.Title>
           <ListGroup className={`list-group-flush ${preferred && 'bg-primary text-white'}`}>
-            {features.map((f) => <ListGroupItem className={`${preferred && 'bg-secondary'}`}>{f}</ListGroupItem>)}
+            {features.map((f) => <ListGroupItem className={`${preferred && 'bg-primary text-white'} text-capitalize`}>{f}</ListGroupItem>)}
           </ListGroup>
-          <Button className="my-3" variant="primary">try free for 30 days</Button>
+          <Button className="my-3" variant={preferred ? 'secondary' : 'primary'}>try free for 30 days</Button>
           <Card.Text className="small">no card required</Card.Text>
         </Card.Body>
       </Card>

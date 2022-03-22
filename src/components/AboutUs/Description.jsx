@@ -3,8 +3,10 @@ import { Col, Row } from 'react-bootstrap';
 
 function Description() {
   return (
-    <Row>
-      <Col><h2>Tools should adapt to the user, not the other way around.</h2></Col>
+    <Row className="py-5 my-5">
+      <Col>
+        <h2 className="display-6 fw-bold">Tools should adapt to the user, not the other way around.</h2>
+      </Col>
       <Col>
         <p>
           {`Since 2007, we have helped 25 companies launch over 1k incredible products.

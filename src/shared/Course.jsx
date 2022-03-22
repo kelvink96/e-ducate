@@ -10,10 +10,10 @@ function Course({
   id, image, title, body, level, ratings, period,
 }) {
   return (
-    <Card className="h-100">
+    <Card className="h-100 me-1">
       <Card.Img variant="top" height={200} src={image} style={{ objectFit: 'cover' }} />
       <Card.Body>
-        <div className="d-flex align-items-center justify-content-between mb-2">
+        <div className="d-flex align-items-center justify-content-between mb-3">
           <Badge bg="secondary" className="text-dark fs-6 text-capitalize">{level}</Badge>
           <Button variant="white">
             <FontAwesomeIcon icon={faBookmark} />
@@ -30,7 +30,7 @@ function Course({
       </Card.Body>
       <Card.Footer className="d-flex justify-content-between align-items-center bg-transparent">
         <LinkContainer to={`/course/${id}`}>
-          <Button variant="primary">
+          <Button variant="outline-primary">
             <FontAwesomeIcon icon={faCartShopping} className="me-2" />
             book now
           </Button>

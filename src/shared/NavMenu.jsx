@@ -11,7 +11,8 @@ import {
 import { LinkContainer } from 'react-router-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCog, faDoorOpen, faEllipsisH, faHome, faQuestionCircle, faUser,
+  faBell,
+  faCog, faDoorOpen, faQuestionCircle, faUser,
 } from '@fortawesome/free-solid-svg-icons';
 import './styles.scss';
 import Logo from '../assets/img/logo.png';
@@ -20,7 +21,7 @@ import UserImage from '../assets/img/avatar.jpg';
 function NavMenu() {
   return (
     <div>
-      <Navbar expand="lg" className="shadow-sm" fixed>
+      <Navbar expand="lg" className="shadow-sm bg-white" fixed="top">
         <Container>
           <Navbar.Brand href="/">
             <img
@@ -43,17 +44,9 @@ function NavMenu() {
               <LinkContainer to="/courses">
                 <Nav.Link>courses</Nav.Link>
               </LinkContainer>
-              <NavDropdown title={<FontAwesomeIcon icon={faEllipsisH} />}>
-                <LinkContainer to="/student">
-                  <NavDropdown.Item>student</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/instructor">
-                  <NavDropdown.Item>instructor</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/pricing">
-                  <NavDropdown.Item>pricing</NavDropdown.Item>
-                </LinkContainer>
-              </NavDropdown>
+              <LinkContainer to="/pricing">
+                <Nav.Link>pricing</Nav.Link>
+              </LinkContainer>
             </Nav>
             <Form className="d-flex">
               <FormControl
@@ -63,6 +56,9 @@ function NavMenu() {
               />
             </Form>
             <Nav className="ms-2">
+              <Nav.Link href="/notifications" className="mx-2">
+                <FontAwesomeIcon icon={faBell} style={{ verticalAlign: 'bottom' }} />
+              </Nav.Link>
               <NavDropdown
                 title={(
                   <img
@@ -77,29 +73,23 @@ function NavMenu() {
                 <LinkContainer to="/profile">
                   <NavDropdown.Item>
                     <FontAwesomeIcon className="me-2" icon={faUser} />
-                    profile
+                    my profile
                   </NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/">
+                <LinkContainer to="/account">
                   <NavDropdown.Item>
                     <FontAwesomeIcon className="me-2" icon={faCog} />
                     account + billing
                   </NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to="/">
-                  <NavDropdown.Item>
-                    <FontAwesomeIcon className="me-2" icon={faHome} />
-                    my home
-                  </NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/">
+                <LinkContainer to="/faq">
                   <NavDropdown.Item>
                     <FontAwesomeIcon className="me-2" icon={faQuestionCircle} />
-                    helpcenter
+                    help center
                   </NavDropdown.Item>
                 </LinkContainer>
                 <Dropdown.Divider />
-                <LinkContainer to="/">
+                <LinkContainer to="/login">
                   <NavDropdown.Item>
                     <FontAwesomeIcon className="me-2" icon={faDoorOpen} />
                     logout

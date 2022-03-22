@@ -35,8 +35,19 @@ function Testimonials() {
   };
 
   return (
-    <Row>
-      <Col lg={6}>
+    <Row className="py-5 my-5">
+      <Col xs={12} md={6} className="mb-3">
+        <h1 className="display-6 fw-bold">Some valuable feedback from our students</h1>
+        <p>
+          Supposing so be resolving breakfast am or perfectly.
+          It drew a hill from me. Valley by oh twenty direct me so.
+          Departure defective arranging rapturous did believe him all had supported.
+          Family months lasted simple set nature vulgar him.
+          Picture for attempt joy excited ten carried manners talking how.
+        </p>
+        <Button variant="outline-primary">view reviews</Button>
+      </Col>
+      <Col xs={12} md={6}>
         <Slide {...properties}>
           {testimonials.map((t) => (
             <Testimonial
@@ -49,17 +60,6 @@ function Testimonials() {
             />
           ))}
         </Slide>
-      </Col>
-      <Col lg={6}>
-        <h1 className="display-6">Some valuable feedback from our students</h1>
-        <p>
-          Supposing so be resolving breakfast am or perfectly.
-          It drew a hill from me. Valley by oh twenty direct me so.
-          Departure defective arranging rapturous did believe him all had supported.
-          Family months lasted simple set nature vulgar him.
-          Picture for attempt joy excited ten carried manners talking how.
-        </p>
-        <Button>view reviews</Button>
       </Col>
     </Row>
   );

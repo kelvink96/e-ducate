@@ -6,12 +6,12 @@ import NoDataIcon from '../../assets/img/no-data-icon.png';
 
 function Certifications() {
   return (
-    <div>
-      <h4>latest certificates</h4>
+    <div className="py-5">
+      <h4 className="mb-4 text-capitalize">latest certificates</h4>
       <Card className="text-center">
         <Card.Body>
           <Image src={NoDataIcon} height={50} width={50} className="my-3" />
-          <Card.Text>complete a course to earn a certification</Card.Text>
+          <Card.Text className="py-4">complete a course to earn a certification</Card.Text>
         </Card.Body>
       </Card>
     </div>

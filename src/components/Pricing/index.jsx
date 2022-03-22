@@ -32,8 +32,8 @@ function PricingWrapper() {
   return (
     <div>
       <NavMenu />
-      <Container>
-        <h2>Find the right plan for your site</h2>
+      <Container className="main py-5 mb-5">
+        <h2 className="display-6 fw-bold text-center mb-4">Find the right plan for your site</h2>
         <Tabs defaultActiveKey="monthly" id="uncontrolled-tab-example" className="mb-3 justify-content-center">
           <Tab eventKey="monthly" title="Monthly">
             <Row xs={1} md={2} lg={3} className="g-4">
@@ -64,22 +64,24 @@ function PricingWrapper() {
             </Row>
           </Tab>
         </Tabs>
-        <div className="d-flex">
+        <div className="d-flex gap-3 pt-5 pb-3 justify-content-center align-items-center">
           <div>
-            <h4>customized</h4>
+            <h4>Customized</h4>
             <Card.Text>Design a custom package for your business</Card.Text>
           </div>
           <div>
             <Button variant="outline-primary">
               contact sales
+              &nbsp;
               <FontAwesomeIcon icon={faAngleRight} />
             </Button>
           </div>
         </div>
-        <div>
-          <p>Want to see more?</p>
-          <Button variant="link">
-            See all features and compare plans
+        <div className="text-center pb-5">
+          <p className="mb-2">Want to see more?</p>
+          <Button variant="outline-primary">
+            see all features and compare plans
+            &nbsp;
             <FontAwesomeIcon icon={faAngleRight} />
           </Button>
         </div>

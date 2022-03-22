@@ -3,17 +3,17 @@ import { Col, Row } from 'react-bootstrap';
 
 function Stats() {
   return (
-    <Row>
+    <Row className="mb-5 pb-5 text-center">
       <Col>
-        <h1>5</h1>
+        <h1 className="display-6 fw-bold">5</h1>
         <p>in business</p>
       </Col>
       <Col>
-        <h1>45K</h1>
+        <h1 className="display-6 fw-bold">45K</h1>
         <p>registered users</p>
       </Col>
       <Col>
-        <h1>91%</h1>
+        <h1 className="display-6 fw-bold">91%</h1>
         <p>happy customers</p>
       </Col>
     </Row>

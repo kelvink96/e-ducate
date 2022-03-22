@@ -7,20 +7,23 @@ import { faqs } from '../../mocks/faqs';
 function Faqs() {
   return (
     <div>
-      <h2>Frequently asked questions</h2>
-      <p>Perceived end knowledge certainly day sweetness why cordially</p>
+      <div className="text-center mb-5">
+        <h2 className="display-6 fw-bold">Frequently asked questions</h2>
+        <p>Perceived end knowledge certainly day sweetness why cordially</p>
+      </div>
       <Row>
         {faqs.map((f) => (
-          <Col key={`faq-${f.id}`} sm={12} md={6}>
+          <Col key={`faq-${f.id}`} sm={12} md={6} className="mb-3">
             <h5>{f.title}</h5>
             <p>{f.description}</p>
           </Col>
         ))}
       </Row>
-      <div>
-        <p>Still have questions?</p>
-        <Button variant="link">
+      <div className="text-center">
+        <p className="mb-2">Still have questions?</p>
+        <Button variant="outline-primary">
           Contact our friendly support team
+          &nbsp;
           <FontAwesomeIcon icon={faAngleRight} />
         </Button>
       </div>

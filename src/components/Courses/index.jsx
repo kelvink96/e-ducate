@@ -10,7 +10,7 @@ function CoursesWrapper() {
   return (
     <div>
       <NavMenu />
-      <Container className="pt-4">
+      <Container className="pt-4 main">
         <Row>
           <Col lg={9}>
             <Header />

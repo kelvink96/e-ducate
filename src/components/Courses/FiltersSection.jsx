@@ -7,10 +7,10 @@ import { languages } from '../../mocks/languages';
 
 function FiltersSection() {
   return (
-    <div>
+    <div className="mt-2">
       <Card>
-        <Card.Header>
-          <Card.Title>category</Card.Title>
+        <Card.Header className="bg-transparent">
+          <Card.Title><h3>category</h3></Card.Title>
         </Card.Header>
         <Card.Body>
           <div className="d-flex flex-column gap-2">
@@ -25,8 +25,8 @@ function FiltersSection() {
         </Card.Body>
       </Card>
       <Card>
-        <Card.Header>
-          <Card.Title>price level</Card.Title>
+        <Card.Header className="bg-transparent">
+          <Card.Title><h3>price level</h3></Card.Title>
         </Card.Header>
         <Card.Body>
           <ButtonGroup className="gap-2">
@@ -37,8 +37,8 @@ function FiltersSection() {
         </Card.Body>
       </Card>
       <Card>
-        <Card.Header>
-          <Card.Title>skill level</Card.Title>
+        <Card.Header className="bg-transparent">
+          <Card.Title><h3>skill level</h3></Card.Title>
         </Card.Header>
         <Card.Body>
           <ButtonGroup className="gap-2 flex-wrap">
@@ -50,8 +50,8 @@ function FiltersSection() {
         </Card.Body>
       </Card>
       <Card>
-        <Card.Header>
-          <Card.Title>language</Card.Title>
+        <Card.Header className="bg-transparent border-0">
+          <Card.Title><h3>language</h3></Card.Title>
         </Card.Header>
         <Card.Body>
           <ButtonGroup className="gap-2 flex-wrap">

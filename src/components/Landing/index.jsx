@@ -8,12 +8,12 @@ import Courses from './Courses';
 import Actions from './Actions';
 import Testimonials from './Testimonials';
 
-function LandingWrapper() {
+function LandingWrapper({ isMobile }) {
   return (
     <div>
       <NavMenu />
-      <Container>
-        <Hero />
+      <Container className="main">
+        <Hero isMobile={isMobile} />
         <Catalog />
         <Courses />
         <Actions />
