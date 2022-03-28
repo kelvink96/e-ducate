@@ -9,22 +9,22 @@ import { team } from '../../mocks/team';
 
 function Teams() {
   return (
-    <div>
-      <h2>Meet Our Team</h2>
-      <Row xs={1} md={2} lg={4} className="g-2 justify-content-center">
+    <div className="py-3 py-md-5 my-3 my-md-5">
+      <h2 className="display-6 fw-bold mb-5 text-center">Meet Our Team</h2>
+      <Row xs={1} md={2} lg={4} className="g-3 justify-content-center">
         {team.map((t) => (
           <Col key={t.id}>
-            <Card className="h-100">
+            <Card className="h-100 text-center">
               <Card.Header className="bg-transparent border-0">
                 <Image src={t.avatarImg} roundedCircle width={64} height={64} style={{ objectFit: 'cover' }} />
               </Card.Header>
               <Card.Body>
-                <Card.Text>{t.position}</Card.Text>
+                <Card.Text className="text-capitalize">{t.position}</Card.Text>
                 <Card.Title>{t.name}</Card.Title>
                 <Card.Text>{t.body}</Card.Text>
               </Card.Body>
               <Card.Footer className="bg-transparent border-0">
-                <div className="d-flex gap-2">
+                <div className="d-flex gap-2 justify-content-center">
                   <Button variant="outline-primary" size="sm"><FontAwesomeIcon icon={faFacebookF} /></Button>
                   <Button variant="outline-primary" size="sm"><FontAwesomeIcon icon={faTwitter} /></Button>
                   <Button variant="outline-primary" size="sm"><FontAwesomeIcon icon={faLinkedinIn} /></Button>
@@ -34,7 +34,7 @@ function Teams() {
           </Col>
         ))}
       </Row>
-      <div className="text-center">
+      <div className="text-center mt-4">
         <Button variant="outline-primary" size="lg">
           want to work with us?
           <b className="ms-2">we are hiring</b>

@@ -3,7 +3,7 @@ import { Pagination } from 'react-bootstrap';
 
 function BasicPagination() {
   return (
-    <Pagination className="justify-content-center">
+    <Pagination className="justify-content-center my-4">
       <Pagination.Prev disabled />
       <Pagination.Item active>{1}</Pagination.Item>
       <Pagination.Item>{2}</Pagination.Item>

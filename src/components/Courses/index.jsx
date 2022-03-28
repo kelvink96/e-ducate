@@ -10,13 +10,13 @@ function CoursesWrapper() {
   return (
     <div>
       <NavMenu />
-      <Container className="pt-4">
+      <Container className="pt-4 main">
         <Row>
-          <Col lg={9}>
+          <Col xs={12} lg={9}>
             <Header />
             <Courses />
           </Col>
-          <Col lg={3}>
+          <Col xs={12} lg={3} className="d-none d-md-block">
             <FiltersSection />
           </Col>
         </Row>

@@ -13,5 +13,11 @@ module.exports = {
     'import/no-named-as-default-member': 'off',
     'import/prefer-default-export': 'off',
     'no-plusplus': 'off',
+    'no-console': 'warn',
+  },
+  env: {
+    browser: true,
+    node: true,
+    jasmine: true,
   },
 };

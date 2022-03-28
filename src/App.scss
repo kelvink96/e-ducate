@@ -38,3 +38,21 @@ $navbar-dark-hover-color: rgba($white, .9);
 @import "bootstrap";
 
 // Add SASS theme customizations here..
+
+.main {
+  margin-top: 50px;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+a , .btn{
+  text-transform: capitalize;
+}
+
+.footer {
+  a, .btn, h4 {
+    text-transform: capitalize;
+  }
+}

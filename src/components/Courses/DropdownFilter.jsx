@@ -5,7 +5,7 @@ function DropdownFilter() {
   return (
     <div>
       <Dropdown>
-        <Dropdown.Toggle variant="outline-primary" id="dropdown-basic">
+        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
           sort by
         </Dropdown.Toggle>
 

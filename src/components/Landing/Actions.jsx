@@ -7,9 +7,9 @@ import HeroImg2 from '../../assets/img/hero-2.jpg';
 
 function Actions() {
   return (
-    <Row>
-      <Col>
-        <Card>
+    <Row className="py-3 py-md-5 my-3 my-md-5">
+      <Col xs={12} md={6} className="mb-3 mb-md-0">
+        <Card className="h-100">
           <Card.Body>
             <Row className="align-items-center">
               <Col>
@@ -24,8 +24,8 @@ function Actions() {
           </Card.Body>
         </Card>
       </Col>
-      <Col>
-        <Card>
+      <Col xs={12} md={6}>
+        <Card className="h-100">
           <Card.Body>
             <Row className="align-items-center">
               <Col>
