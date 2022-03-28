@@ -18,7 +18,7 @@ function Error404Wrapper() {
           If you think this is a problem with us, please&nbsp;
           <Link to="/" variant="link" className="text-lowercase">tell us.</Link>
         </p>
-        <Button>
+        <Button href="/">
           <FontAwesomeIcon icon={faAngleLeft} />
           <span className="ms-2">Go back home</span>
         </Button>
