@@ -26,7 +26,7 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="*" element={<ErrorPage404 />} />
+        <Route path="*" element={<ErrorPage404 isMobile={isMobile} />} />
       </Routes>
     </div>
   );

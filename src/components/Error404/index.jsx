@@ -7,12 +7,12 @@ import Image404 from '../../assets/img/404.png';
 import NavMenu from '../../shared/NavMenu';
 import Footer from '../Footer';
 
-function Error404Wrapper() {
+function Error404Wrapper({ isMobile }) {
   return (
     <div>
       <NavMenu />
       <Container className="mt-5 py-3 py-md-5 text-center">
-        <Image src={Image404} height={400} />
+        <Image src={Image404} height={isMobile ? 200 : 400} />
         <p className="lead fw-normal">
           Oops! Looks like you followed a bad link.
           If you think this is a problem with us, please&nbsp;
