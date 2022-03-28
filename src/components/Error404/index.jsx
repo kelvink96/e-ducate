@@ -12,7 +12,7 @@ function Error404Wrapper({ isMobile }) {
     <div>
       <NavMenu />
       <Container className="mt-5 py-3 py-md-5 text-center">
-        <Image src={Image404} height={isMobile ? 200 : 400} />
+        <Image src={Image404} height={isMobile ? 200 : 400} className="my-3" />
         <p className="lead fw-normal">
           Oops! Looks like you followed a bad link.
           If you think this is a problem with us, please&nbsp;

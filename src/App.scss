@@ -56,3 +56,11 @@ a , .btn{
     text-transform: capitalize;
   }
 }
+
+.nav-link {
+  border-radius: 4.8px;
+}
+
+.nav-link.active{
+  background-color: $secondary;
+}

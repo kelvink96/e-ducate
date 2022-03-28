@@ -7,7 +7,7 @@ import BasicPagination from '../../shared/Pagination';
 function Courses() {
   return (
     <div>
-      <Row xs={1} md={2} lg={3} className="g-3 mb-3">
+      <Row xs={1} md={2} lg={3} className="gy-3 gx-0 mb-3">
         {courses.map((course) => (
           <Col>
             <Course

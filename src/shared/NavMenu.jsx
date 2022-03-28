@@ -47,6 +47,9 @@ function NavMenu() {
               <LinkContainer to="/pricing">
                 <Nav.Link>pricing</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/404">
+                <Nav.Link>404</Nav.Link>
+              </LinkContainer>
             </Nav>
             <Form className="d-flex">
               <FormControl
