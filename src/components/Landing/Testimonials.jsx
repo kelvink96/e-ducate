@@ -31,8 +31,8 @@ function Testimonials() {
   };
 
   return (
-    <Row className="py-5 my-5">
-      <Col xs={12} md={6} className="mb-3">
+    <Row className="py-3 py-md-5 my-3 my-md-5">
+      <Col xs={12} md={6} className="mb-3 text-center text-md-start">
         <h1 className="display-6 fw-bold">Some valuable feedback from our students</h1>
         <p>
           Supposing so be resolving breakfast am or perfectly.

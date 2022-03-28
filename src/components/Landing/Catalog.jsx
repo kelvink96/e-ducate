@@ -12,7 +12,7 @@ import {
 
 function Catalog() {
   return (
-    <div className="align-items-center py-5 my-5">
+    <div className="align-items-center py-3 py-md-5 my-3 my-md-5">
       <h1 className="display-6 fw-bold mb-4 text-center">What kind of courses offers learning platform</h1>
       <Row xs={2} md={4} className="g-1 g-md-3 py-3">
         <Col>

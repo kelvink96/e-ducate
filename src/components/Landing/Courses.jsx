@@ -30,10 +30,10 @@ function Courses() {
   };
 
   return (
-    <div className="py-5">
+    <div className="py-3 py-md-5 my-3 my-md-5">
       <div className="text-center mb-4">
         <h1 className="display-6 fw-bold">Popular courses</h1>
-        <p>Choose from hundreds of courses from specialist organizations</p>
+        <p className="lead fw-normal">Choose from hundreds of courses from specialist organizations</p>
       </div>
       <Slide {...properties}>
         {courses.map((course) => (

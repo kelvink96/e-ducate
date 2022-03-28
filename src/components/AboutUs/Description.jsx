@@ -3,11 +3,11 @@ import { Col, Row } from 'react-bootstrap';
 
 function Description() {
   return (
-    <Row className="py-5 my-5">
-      <Col>
+    <Row className="py-3 py-md-5 my-3 my-md-5 text-center text-md-start">
+      <Col xs={12} md={6}>
         <h2 className="display-6 fw-bold">Tools should adapt to the user, not the other way around.</h2>
       </Col>
-      <Col>
+      <Col xs={12} md={6}>
         <p>
           {`Since 2007, we have helped 25 companies launch over 1k incredible products.
               We believe the best digital solutions are built at the intersection of

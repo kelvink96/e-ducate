@@ -9,8 +9,8 @@ import BadgeIcon from '../../assets/img/badge-icon.png';
 
 function Badges() {
   return (
-    <div className="py-5">
-      <h4 className="mb-4 text-capitalize">latest badge</h4>
+    <div className="py-3 py-md-5">
+      <h4 className="mb-2 mb-4 text-capitalize display-6 fw-bold">latest badge</h4>
       <Row xs={1} md={2} className="g-3 mb-3">
         <Col>
           <Card className="text-center h-100">

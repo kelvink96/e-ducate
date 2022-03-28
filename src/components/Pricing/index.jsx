@@ -64,7 +64,7 @@ function PricingWrapper() {
             </Row>
           </Tab>
         </Tabs>
-        <div className="d-flex gap-3 pt-5 pb-3 justify-content-center align-items-center">
+        <div className="d-flex flex-column flex-md-row gap-3 pt-3 pt-md-5 pb-3 justify-content-center align-items-center text-center text-md-start">
           <div>
             <h4>Customized</h4>
             <Card.Text>Design a custom package for your business</Card.Text>

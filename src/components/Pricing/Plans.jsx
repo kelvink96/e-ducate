@@ -6,9 +6,9 @@ import { pricePlans } from '../../mocks/pricePlans';
 
 function Plans() {
   return (
-    <div>
+    <div className="py-3 py-md-5 my-3 my-md-5">
       {pricePlans.map((pf) => (
-        <Table key={`tb-${pf.id}`} borderless>
+        <Table key={`tb-${pf.id}`} borderless responsive>
           <thead className="bg-secondary fw-bold">
             <tr>
               <td style={{ width: '55%' }}>{pf.title}</td>

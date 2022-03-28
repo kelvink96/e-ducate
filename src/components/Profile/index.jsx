@@ -19,17 +19,17 @@ function ProfileWrapper() {
           <Col sm={12} md={2}>
             <Profile />
           </Col>
-          <Col sm={12} md={7}>
-            <h4 className="mb-4 text-capitalize">latest activity</h4>
+          <Col sm={12} md={7} className="mt-5 mt-md-0">
+            <h4 className="mb-4 text-capitalize display-6 fw-bold">latest activity</h4>
             {courses.slice(0, 5).map((c) => (
               <CourseCard key={`cou-${c.id}`} title={c.title} type={c.type} body={c.body} progress={c.progress} id={c.id} />
             ))}
             <Certifications />
             <Badges />
           </Col>
-          <Col sm={12} md={3}>
+          <Col sm={12} md={3} className="mt-3 mt-md-0">
             <Card>
-              <Card.Header className="bg-transparent"><h4>Achievements</h4></Card.Header>
+              <Card.Header className="bg-transparent border-0"><h4>Achievements</h4></Card.Header>
               <ListGroup className="list-group-flush">
                 <ListGroupItem action className="d-flex justify-content-between">
                   <span>Badges</span>

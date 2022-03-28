@@ -9,7 +9,7 @@ import { team } from '../../mocks/team';
 
 function Teams() {
   return (
-    <div className="py-5 my-5">
+    <div className="py-3 py-md-5 my-3 my-md-5">
       <h2 className="display-6 fw-bold mb-5 text-center">Meet Our Team</h2>
       <Row xs={1} md={2} lg={4} className="g-3 justify-content-center">
         {team.map((t) => (

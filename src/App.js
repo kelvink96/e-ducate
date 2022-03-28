@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import {
-  AboutUsPage, CoursesPage, LandingPage, PricingPage, ProfilePage,
+  AboutUsPage, CoursesPage, ErrorPage404, LandingPage, PricingPage, ProfilePage,
 } from './pages';
 import { useViewport } from './hooks/useViewport';
 
@@ -26,7 +26,7 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="*" element={<h3>not found</h3>} />
+        <Route path="*" element={<ErrorPage404 />} />
       </Routes>
     </div>
   );
