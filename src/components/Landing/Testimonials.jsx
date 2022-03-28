@@ -2,8 +2,6 @@ import React from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { testimonials } from '../../mocks/testimonials';
 import Testimonial from './Testimonial';
 
@@ -14,8 +12,6 @@ function Testimonials() {
     slidesToScroll: 1,
     autoplay: false,
     indicators: false,
-    prevArrow: <FontAwesomeIcon icon={faAngleLeft} />,
-    nextArrow: <FontAwesomeIcon icon={faAngleRight} />,
     responsive: [
       {
         breakpoint: 1024,

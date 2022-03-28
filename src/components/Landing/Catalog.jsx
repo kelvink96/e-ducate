@@ -16,7 +16,7 @@ function Catalog() {
       <h1 className="display-6 fw-bold mb-4 text-center">What kind of courses offers learning platform</h1>
       <Row xs={2} md={4} className="g-1 g-md-3 py-3">
         <Col>
-          <Card className="h-100 border-0">
+          <Card className="h-100 border-0 text-capitalize text-center text-md-start">
             <Card.Body>
               <Card.Title className="d-flex align-items-center flex-column flex-md-row gap-3">
                 <span className="py-2 px-3 rounded-3 bg-primary bg-opacity-10 me-2">
@@ -28,7 +28,7 @@ function Catalog() {
           </Card>
         </Col>
         <Col>
-          <Card className="h-100 border-0">
+          <Card className="h-100 border-0 text-capitalize text-center text-md-start">
             <Card.Body>
               <Card.Title className="d-flex align-items-center flex-column flex-md-row gap-3">
                 <span className="py-2 px-3 rounded-3 bg-primary bg-opacity-10 me-2">
@@ -40,7 +40,7 @@ function Catalog() {
           </Card>
         </Col>
         <Col>
-          <Card className="h-100 border-0">
+          <Card className="h-100 border-0 text-capitalize text-center text-md-start">
             <Card.Body>
               <Card.Title className="d-flex align-items-center flex-column flex-md-row gap-3">
                 <span className="py-2 px-3 rounded-3 bg-primary bg-opacity-10 me-2">
@@ -52,7 +52,7 @@ function Catalog() {
           </Card>
         </Col>
         <Col>
-          <Card className="h-100 border-0">
+          <Card className="h-100 border-0 text-capitalize text-center text-md-start">
             <Card.Body>
               <Card.Title className="d-flex align-items-center flex-column flex-md-row gap-3">
                 <span className="py-2 px-3 rounded-3 bg-primary bg-opacity-10 me-2">
